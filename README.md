@@ -1,3 +1,5 @@
+A short demo showing that GoLang channels are non-determinate when writing. But, a `close(chan)` is. 
+
 ```shell
 $ go run test.go 
 Configuring A() and B() go-routines as stop channel readers...
