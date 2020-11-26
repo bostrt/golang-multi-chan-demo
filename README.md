@@ -1,4 +1,4 @@
-A short demo showing that GoLang channels are non-determinate when writing. But, a `close(chan)` is. 
+A short demo showing that GoLang channels are non-deterministic when writing. But, a `close(chan)` is in terms of all readers receiving the close "signal". 
 
 ```shell
 $ go run test.go 
