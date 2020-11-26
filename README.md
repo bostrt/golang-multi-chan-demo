@@ -1,10 +1,26 @@
-```
+```shell
 $ go run test.go 
+Configuring A() and B() go-routines as stop channel readers...
+Sending stop <- struct{}{}...
 B
-$ go run test.go 
-B
-$ go run test.go 
+
+Configuring A() and B() again...
+Calling close(stop)...
 A
+A
+B
+
+
+$ go run test.go 
+Configuring A() and B() go-routines as stop channel readers...
+Sending stop <- struct{}{}...
+A
+
+Configuring A() and B() again...
+Calling close(stop)...
+B
+A
+B
 ```
 
 References:
